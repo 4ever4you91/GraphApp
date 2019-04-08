@@ -1,9 +1,14 @@
 package com.company;
 
+import javax.swing.*;
+import java.awt.*;
+
 public class Main {
     public static void main (String [] args) {
-    myFr ftame = new myFr("My title");
-    myFr fr = new myFr(10, 4, 10);
-    fr.vol();
+    myFr fr = new myFr("My title");
+    myFr fr1 = new myFr(10, 4, 10);
+    fr1.vol();
+    JButton myB = new JButton("Check it");
+    fr.getContentPane().add(myB);
     }
 }

@@ -2,6 +2,7 @@ package com.company;
 
 
 import javax.swing.*;
+import java.awt.*;
 
 public class myFr extends JFrame {
     private int w = 20;
@@ -11,6 +12,11 @@ public class myFr extends JFrame {
    public myFr (String a){
        super(a);
        setDefaultCloseOperation(EXIT_ON_CLOSE);
+       JPanel panel = new JPanel();
+       panel.setLayout(new FlowLayout());
+       panel.add(new JButton("Result"));
+       panel.add(new JButton("Comp"));
+       setContentPane(panel);
        setSize(300, 300);
        setVisible(true);
    }
