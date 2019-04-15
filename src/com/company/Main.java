@@ -10,5 +10,8 @@ public class Main {
     fr1.vol();
     JButton myB = new JButton("Check it");
     fr.getContentPane().add(myB);
+    AttThread att1 = new AttThread();
+    Thread t1 = new Thread(att1);
+    t1.start();
     }
 }
